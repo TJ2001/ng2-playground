@@ -10,7 +10,7 @@
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Hemoglobin A1C</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail1()">Hemoglobin A1C</td>
       <td class="tg-yw4l col3">15-Jun-2016</td>
       <td class="tg-yw4l col4">Diabetes mellitus II</td>
       <td class="tg-yw4l col5">CMS122</td>
@@ -18,7 +18,7 @@
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Modify treatment plan to lower HbA1C</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail1()">Modify treatment plan to lower HbA1C</td>
       <td class="tg-yw4l col3">TODAY</td>
       <td class="tg-yw4l col4">Diabetes mellitus II<br>Hba1c > = 9.0%</td>
       <td class="tg-yw4l col5">CMS122</td>
@@ -26,7 +26,7 @@
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Funduscopic exam</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail3()">Funduscopic exam</td>
       <td class="tg-yw4l col3">15-Jun-2016</td>
       <td class="tg-yw4l col4">Diabetes mellitus II</td>
       <td class="tg-yw4l col5">CMS142</td>
@@ -34,23 +34,23 @@
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Diabetic foot exam</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail4()">Diabetic foot exam</td>
       <td class="tg-yw4l col3">15-Jun-2016</td>
-      <td class="tg-yw4l col4">Diabetes mellitius II</td>
+      <td class="tg-yw4l col4 pointer">Diabetes mellitius II</td>
       <td class="tg-yw4l col5">CMS123</td>
       <td class="tg-yw4l col6">CMS</td>
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Modify treatment plan <br>to lower LDL</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail5()">Modify treatment plan <br>to lower LDL</td>
       <td class="tg-yw4l col3">TODAY</td>
-      <td class="tg-yw4l col4">Diabetes mellitus II<br>LDL >= 100mg/ml</td>
+      <td class="tg-yw4l col4 pointer">Diabetes mellitus II<br>LDL >= 100mg/ml</td>
       <td class="tg-yw4l col5">CMS163</td>
       <td class="tg-yw4l col6">CMS</td>
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Start beta blocker therapy</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail6()">Start beta blocker therapy</td>
       <td class="tg-yw4l col3">TODAY</td>
       <td class="tg-yw4l col4">Congetive Heart Failure <br> LVEF < 40%</td>
       <td class="tg-yw4l col5">CMS144</td>
@@ -58,31 +58,29 @@
     </tr>
     <tr>
       <td class="tg-yw4l col1"><span class="glyphicon glyphicon-unchecked"></span></td>
-      <td class="tg-yw4l col2">Screening mammogram</td>
+      <td class="tg-yw4l col2 pointer" onclick="displayDetail7()">Screening mammogram</td>
       <td class="tg-yw4l col3">15-Jun-2016</td>
       <td class="tg-yw4l col4">Preventive medicine</td>
       <td class="tg-yw4l col5">CMS125</td>
       <td class="tg-yw4l col6">CMS</td>
     </tr>
   </table>
-    <span style="font-size:30px;cursor:pointer" onclick="displaySlide1()">&#9776; detail1</span>
-    <span style="font-size:30px;cursor:pointer" onclick="displaySlide2()">&#9774; detail2</span>
-    <span style="font-size:30px;cursor:pointer" onclick="displaySlide3()">&#9775; detail3</span>
+    <span style="font-size:30px;cursor:pointer" onclick="displayDetail1()">&#9776; detail1</span>
+    <span style="font-size:30px;cursor:pointer" onclick="displayDetail2()">&#9774; detail2</span>
+    <span style="font-size:30px;cursor:pointer" onclick="displayDetail3()">&#9775; detail3</span>
 </div>
 
 <div id="mySidenav" class="sidenav">
-
     <div id="left" onclick="closeNav()">
       <img src="assets/images/arrow.png" id="arrow" alt="">
     </div>
     <div id="right">
-      <h4 id="detail">This is a story.</h4>
-      <h4 id="detail1">All about how my life</h4>
-      <h4 id="detail2">got turned upside down.</h4>
-      <h4 id="detail3">I was playing some ball</h4>
-      <h4 id="detail4">then a couple of guys</h4>
+      <div class="recommendation" id="detail"><h5 class="bold">American Diabetes Association (2015):</h5><p>- Lowering A1C to approximately 7% or less has been shown to reduce microvascular complications of diabetes, and, if implemented soon after the diagnosis of diabetes, it is associated with long-term reduction in macrovascular disease. Therefore, a reasonable A1C goal for many nonpregnant adults is 7%. (Level of evidence: B)</p><p>- Providers might reasonably suggest more stringent A1C goals (such as 6.5%) for selected individual patients if this can be achieved without significant hypoglycemia or other adverse effects of treatment. Appropriate patients might include those with short duration of diabetes, type 2 diabetes treated with lifestyle or metformin only, long life expectancy, or no significant cardiovascular disease (CVD). (Level of evidence: C)</p><p>- Less stringent A1C goals (such as 8%) may be appropriate for patients
+with a history of severe hypoglycemia, limited life expectancy, advanced microvascular or macrovascular complications, extensive comorbid
+conditions, or long-standing diabetes in whom the general goal is difficult to attain despite diabetes self-management education, appropriate glucose monitoring, and effective doses of multiple glucose-lowering agents including insulin. (Level of evidence: B)</p></div>
+      <div class="recommendation" id="detail2"><p>The measure, as written, does not specifically require documentation of laterality. Coding limitations in particular clinical terminologies do not currently allow for that level of specificity (ICD-10-CM includes laterality, but ICD-9-CM and SNOMED-CT do not uniformly include this distinction). Therefore, at this time, it is not a requirement of this measure to indicate laterality of the diagnoses, findings or procedures. Available coding to capture the data elements specified in this measure has been provided. It is assumed that the eligible professional will record laterality in the patient medical record, as quality care and clinical documentation should include laterality.</p><p>The communication of results to the primary care physician providing ongoing care of a patient's diabetes should be completed soon after the dilated exam is performed.  Eligible professionals reporting on this measure should note that all data for the reporting year is to be submitted by the deadline established by CMS.  Therefore, eligible professionals who see patients towards the end of the reporting period (ie, December in particular), should communicate the results of the dilated macular exam as soon as possible in order for those patients to be counted in the measure numerator.  Communicating the results as soon as possible after the date of the exam will ensure the data are included in the submission to CMS.</p></div>
+      <div class="recommendation" id="detail3">got turned upside down.</div>
+      <div class="recommendation" id="detail4">I was playing some ball</div>
+      <div class="recommendation" id="detail5">then a couple of guys</div>
     </div>
 </div>
-
-      <img src="assets/images/arrow.png" alt="">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
