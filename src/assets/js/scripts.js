@@ -1,22 +1,10 @@
-function openNav() {
-    document.getElementById("mySidenav").style.width = "300px";
+function move(){
+  if ($(".sideReference").hasClass("animate")){
+      $(".sideReference").removeClass("animate");
+  } else {
+   $(".sideReference").addClass("animate");
+  }
 }
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-
-function openClose() {
-    var width = document.getElementById("mySidenav").offsetWidth;
-    // console.log(width);
-    if (width == 0){
-      this.openNav();
-    } else {
-      this.closeNav();
-    }
-}
-
-
 
 function hideAll(){
   $(".recommendation").each(function(){
@@ -24,9 +12,8 @@ function hideAll(){
   });
 }
 
-
 function displayDetail1(){
-  openNav();
+  move();
   hideAll();
   $( "#detail" ).show();
   // setTimeout(function(){$( "#detail" ).show(); }
@@ -34,7 +21,7 @@ function displayDetail1(){
 }
 
 function displayDetail2(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail2" ).show(); }
@@ -42,7 +29,7 @@ function displayDetail2(){
 }
 
 function displayDetail3(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail3" ).show(); }
@@ -50,7 +37,7 @@ function displayDetail3(){
 }
 
 function displayDetail4(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail4" ).show(); }
@@ -58,7 +45,7 @@ function displayDetail4(){
 }
 
 function displayDetail5(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail5" ).show(); }
@@ -66,7 +53,7 @@ function displayDetail5(){
 }
 
 function displayDetail6(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail6" ).show(); }
@@ -74,7 +61,7 @@ function displayDetail6(){
 }
 
 function displayDetail7(){
-  openNav();
+  move();
   hideAll();
   // $( "#detail" ).show();
   setTimeout(function(){$( "#detail7" ).show(); }
@@ -82,7 +69,7 @@ function displayDetail7(){
 }
 
 function displaySlide3(){
-  openNav();
+  move();
   hideAll();
   $( "#detail3" ).show();
 }
